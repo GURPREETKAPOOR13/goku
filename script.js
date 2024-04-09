@@ -92,17 +92,17 @@ document.onkeydown = function (e) {
         dino.classList.add('animateDino');
         setTimeout(() => {
             dino.classList.remove('animateDino')
-        },3500);
+        },4500);
     }
     if (e.key == 'ArrowRight') { // Fixed typo here (changed e.keyC to e.key)
         dino = document.querySelector('.dino');
         dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-        dino.style.left = dinoX + 112 + "px";
+        dino.style.left = dinoX + 300 + "px";
     }
     if (e.key == 'ArrowLeft') {
         dino = document.querySelector('.dino');
         dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-        dino.style.left = (dinoX - 112) + "px";
+        dino.style.left = (dinoX - 300) + "px";
     }
 }
 
